@@ -162,7 +162,7 @@ class Trainer:
 
     
   def attack_other_trainer(self, othertrainer):
-      print("################"+str(self.name)+" makes move################")
+      print("################"+str(self.name)+" attacks################")
       print(str(self.pokemonstorage[self.active].getname()) + " vs " +str(othertrainer.pokemonstorage[othertrainer.active].getname()) )
 
       if self.pokemonstorage[self.active].getcurrenthealth() <= 0:
@@ -179,7 +179,7 @@ class Trainer:
       
     
   def usePotion(self,newpotion):
-      print("################"+str(self.name)+" makes move################")
+      print("################"+str(self.name)+" uses a potion################")
       if newpotion <= 0:
         print("Please use a potion greater than 0 effect")
       else:
@@ -194,7 +194,7 @@ class Trainer:
       
 
   def switchActive(self,chooseActive):
-      print("################"+str(self.name)+" makes move################")
+      print("################"+str(self.name)+" switches pokemon################")
       if len(self.pokemonstorage)>0:
           if chooseActive >=0 and chooseActive < len(self.pokemonstorage):
            oldactive = self.active   
