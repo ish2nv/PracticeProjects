@@ -6,8 +6,8 @@ money = 100
 
 def coinsim(bet,ht):
 
-    maxval = 13
-    num = random.randint(1, maxval)
+    maxval = 10
+    num = random.uniform(1, maxval)
     val = ""
     iswinner = False
     tempvar = money
@@ -22,7 +22,7 @@ def coinsim(bet,ht):
 
     else:
         
-     if num <=maxval/2:
+     if num <=float(maxval/2):
         val = "Heads"
         if ht == "Heads":
             tempvar = tempvar + bet
