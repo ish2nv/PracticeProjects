@@ -147,7 +147,7 @@ def cardsim(bet):
         print("Player 1 card: " + str(player1))
         print("Player 2 card: " + str(player2))
         print("Player 1 wins!")
-        print()
+        print("")
         print("You gained " + str(bet))
         print("Your amount is " + str(tempvar))     
 
@@ -157,7 +157,7 @@ def cardsim(bet):
         print("Player 1 card: " + str(player1))
         print("Player 2 card: " + str(player2))
         print("Player 1 loses!")
-        print()
+        print("")
         print("You lost " + str(bet))
         print("Your amount is " + str(tempvar))        
 
@@ -246,7 +246,7 @@ def roulette(bet,yourSelection):
     if iswinner == True:
         print("You selected " + str(yourSelection))
         print("Roulette number is " + str(luckynumber))
-        print()
+        print("")
         print("You won roulette!")
         print("You gained " + str(bet))
         print("Your amount is " + str(tempvar))
@@ -255,7 +255,7 @@ def roulette(bet,yourSelection):
     else:
         print("You selected " + str(yourSelection))        
         print("Roulette number is " + str(luckynumber))
-        print()
+        print("")
         print("You lost roulette!")
         print("You lost " + str(bet))
         print("Your amount is " + str(tempvar))       
